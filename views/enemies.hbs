@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Enemies</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
+</head>
+
+
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="/">Home</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section class="uk-container">
+        <div class=" uk-child-width-1@m uk-grid-small uk-grid-match">
+            {{#each enemies}}
+            <div class="uk-card uk-card-primary uk-card-body .uk-margin-small-bottom">
+                <h3 class="uk-card-title uk-text-center"><a href="/enemies/{{this.id}}">{{this.name}}</a></h3>
+                <div>
+                    <img src="/enemy/image/{{this.image}}" alt="">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
+</body>
+
+</html>

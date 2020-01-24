@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Enemies</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
+</head>
+
+
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="/">Home</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section class="uk-container">
+        <div class="uk-card uk-card-primary uk-card-body .uk-margin-small uk-margin-small-right uk-margin-small-left">
+            <h3 class="uk-card-title uk-text-center">{{enemy.name}}</h3>
+            <div class="uk-card-body">
+                <table class="uk-table">
+                    <caption>Stats</caption>
+                    <thead>
+                        <tr>
+                            <th>Health</th>
+                            <th>PositionX</th>
+                            <th>PositionY</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{enemy.health}}</td>
+                            <td>{{enemy.positionX}}</td>
+                            <td>{{enemy.positionY}}</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
